@@ -11,6 +11,7 @@ body {
 }
 
 .formFrame {
+    height: 600px;
     width: 45%;
     /*min-height: 600px; */
     margin: 10px auto;
