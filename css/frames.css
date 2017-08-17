@@ -3,3 +3,35 @@ body {
     text-align: center;
     font-family: sans-serif;
 }
+
+.categoriesFrame {
+    height: 600px;
+    width:45%;
+    margin: 10px auto;
+}
+
+.formFrame {
+    width: 45%;
+    /*min-height: 600px; */
+    margin: 10px auto;
+    
+}
+
+@media screen and (max-width:600px) {
+    h1 {
+        font-size: 1em;
+        margin: 2px auto;
+    }
+    .formFrame {
+        display: block;
+        height: 255px;
+        width: 90%;
+        margin: 5px auto;
+    }
+    .categoriesFrame {
+        display: block;
+        width: 90%;
+        height: 250px;
+        margin: 2px auto;
+    }
+}
