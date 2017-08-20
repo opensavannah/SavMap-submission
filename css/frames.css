@@ -18,21 +18,40 @@ body {
     
 }
 
-@media screen and (max-width:600px) {
+@media screen and (max-width:800px) {
     h1 {
         font-size: 1em;
         margin: 2px auto;
     }
     .formFrame {
         display: block;
-        height: 255px;
+        min-height: 375px;
         width: 90%;
         margin: 5px auto;
     }
     .categoriesFrame {
         display: block;
         width: 90%;
-        height: 250px;
+        height: 400px;
+        margin: 2px auto;
+    }
+}
+
+@media screen and (max-width:400px) {
+    h1 {
+        font-size: 1em;
+        margin: 2px auto;
+    }
+    .formFrame {
+        display: block;
+        height: 300px;
+        width: 90%;
+        margin: 5px auto;
+    }
+    .categoriesFrame {
+        display: block;
+        width: 90%;
+        height: 200px;
         margin: 2px auto;
     }
 }
