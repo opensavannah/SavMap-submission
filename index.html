@@ -7,7 +7,7 @@
 		<title>reveal.js</title>
 
 		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/black.css">
+		<link rel="stylesheet" href="css/theme/beige.css">
 
 		<!-- Theme used for syntax highlighting of code -->
 		<link rel="stylesheet" href="lib/css/zenburn.css">
@@ -24,8 +24,105 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
+				<section>
+					<h1>Categories</h1>
+					<ul>
+						<p>Using the menu on the side, you can browse the different categories. The pages can also be swiped from side to side. To further assist, each large category is broken down into sub-categories. When the correct category is found, enter it into the form on this page.</p>
+						<p>At this time, the clicking on the categories does not populate the form. A solution to this is in the works.</p>
+					</ul>
+				</section>
+				<section>
+					<section data-markdown>
+						<textarea data-template>
+							# Emergency
+
+							- Disaster Response
+							- Emergency Payments +
+							- Emergency Food
+							- Temporary Shelter
+							- Help Find Missing Persons
+							- Immediate Safety +
+							- Psychiatric Emergency Services
+						</textarea>
+					</section>
+					<section data-markdown>
+						<textarea data-template>
+							## Emergency Payments
+
+							- Help Pay for Food
+							- Help Pay for Healthcare
+							- Help Pay for Housing
+							- Help Pay for Gas
+							- Help Pay for School
+							- Help Pay for Utilities
+							- Help Pay for Internet or Phone
+						</textarea>
+					</section>
+					<section data-markdown>
+						<textarea data-template>
+							## Immediate Safety
+
+							Help Escape Violence
+							Safe Housing
+						</textarea>
+					</section>
+				</section>
+				<section data-markdown>
+					<textarea data-template>
+						# Food
+					</textarea>
+				</section>
+				<section data-markdown>
+					<textarea data-template>
+						# Housing
+					</textarea>
+				</section>
+				<section data-markdown>
+					<textarea data-template>
+						# Goods
+					</textarea>
+				</section>
+				<section data-markdown>
+					<textarea data-template>
+						# Transit
+					</textarea>
+				</section>
+				<section data-markdown>
+					<textarea data-template>
+						# Health
+					</textarea>
+				</section>
+				<section data-markdown>
+					<textarea data-template>
+						# Money
+					</textarea>
+				</section>
+				<section data-markdown>
+					<textarea data-template>
+						# Care
+					</textarea>
+				</section>
+				<section data-markdown>
+					<textarea data-template>
+						# Education
+					</textarea>
+				</section>
+				<section data-markdown>
+					<textarea data-template>
+						# Work
+					</textarea>
+				</section>
+				<section data-markdown>
+					<textarea data-template>
+						# Legal
+					</textarea>
+				</section>
+				<section data-markdown>
+					<textarea data-template>
+						# Credits
+					</textarea>
+				</section>
+				
 			</div>
 		</div>
 
@@ -37,11 +134,78 @@
 			// - https://github.com/hakimel/reveal.js#configuration
 			// - https://github.com/hakimel/reveal.js#dependencies
 			Reveal.initialize({
+				menu: {
+					// Specifies which side of the presentation the menu will 
+					// be shown. Use 'left' or 'right'.
+					side: 'left',
+
+					// Add slide numbers to the titles in the slide list.
+					// Use 'true' or format string (same as reveal.js slide numbers)
+					numbers: false,
+
+					// Specifies which slide elements will be used for generating
+					// the slide titles in the menu. The default selects the first
+					// heading element found in the slide, but you can specify any
+					// valid css selector and the text from the first matching
+					// element will be used.
+					// Note: that a section data-menu-title attribute or an element
+					// with a menu-title class will take precedence over this option
+					titleSelector: 'h1,',
+
+					// Hide slides from the menu that do not have a title.
+					// Set to 'true' to only list slides with titles.
+					hideMissingTitles: true,
+
+					// Add markers to the slide titles to indicate the 
+					// progress through the presentation
+					markers: true,
+
+					// Specify custom panels to be included in the menu, by
+					// providing an array of objects with 'title', 'icon'
+					// properties, and either a 'src' or 'content' property.
+					custom: false,
+
+					// Specifies the themes that will be available in the themes
+					// menu panel. Set to 'false' to hide themes panel.
+					themes: false,
+
+					// Specifies if the transitions menu panel will be shown.
+					transitions: false,
+
+					// Adds a menu button to the slides to open the menu panel.
+					// Set to 'false' to hide the button.
+					openButton: true,
+
+					// If 'true' allows the slide number in the presentation to
+					// open the menu panel. The reveal.js slideNumber option must 
+					// be displayed for this to take effect
+					openSlideNumber: true,
+
+					// If true allows the user to open and navigate the menu using
+					// the keyboard. Standard keyboard interaction with reveal
+					// will be disabled while the menu is open.
+					keyboard: true,
+
+					// Normally the menu will close on user actions such as
+					// selecting a menu item, or clicking the presentation area.
+					// If 'true', the sticky option will leave the menu open
+					// until it is explicitly closed, that is, using the close
+					// button or pressing the ESC or m key (when the keyboard 
+					// interaction option is enabled).
+					sticky: false,
+
+					// If 'true' standard menu items will be automatically opened
+					// when navigating using the keyboard. Note: this only takes 
+					// effect when both the 'keyboard' and 'sticky' options are enabled.
+					autoOpen: false
+				},
+				transition: 'concave', // none/fade/slide/convex/concave/zoom
 				dependencies: [
 					{ src: 'plugin/markdown/marked.js' },
 					{ src: 'plugin/markdown/markdown.js' },
 					{ src: 'plugin/notes/notes.js', async: true },
-					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'bower_components/reveal.js-menu/menu.js' }
 				]
 			});
 		</script>
