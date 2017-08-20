@@ -46,12 +46,12 @@ body {
         display: block;
         height: 300px;
         width: 90%;
-        margin: 5px auto;
+        margin: 5px auto 2px 2px;
     }
     .categoriesFrame {
         display: block;
-        width: 90%;
+        width: 75%;
         height: 200px;
-        margin: 2px auto;
+        margin: 5px auto 2px 12px;;
     }
 }
